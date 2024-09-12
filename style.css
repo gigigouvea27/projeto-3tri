@@ -1,0 +1,6 @@
+   /* Estilizando o contêiner do texto */
+   .content {
+    width: 50%; /* O texto vai ocupar 50% da largura da tela */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    text-align: center; /* Opcional: centraliza o texto dentro do contêiner */
+  }
