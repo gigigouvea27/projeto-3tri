@@ -1,6 +1,141 @@
-   /* Estilizando o contêiner do texto */
-   .content {
-    width: 50%; /* O texto vai ocupar 50% da largura da tela */
-    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
-    text-align: center; /* Opcional: centraliza o texto dentro do contêiner */
-  }
+/* Estilo para o título */
+h1 {
+    font-family: 'Aboreto', sans-serif; /* Aplica a fonte Aboreto ao título */
+    text-align: center; /* Centraliza o texto */
+    color: #fff; /* Ajusta a cor do texto conforme necessário */
+    transition: color 0.3s ease; /* Adiciona uma transição suave para a cor do texto */
+}
+
+/* Adiciona o efeito de sombra ao passar o mouse nos textos */
+p:hover, h2:hover, h3:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra leve ao passar o mouse */
+    transition: text-shadow 0.3s ease-in-out; /* Suaviza a transição da sombra */
+}
+/* Fonte Bodoni Moda para o título principal */
+h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+/* Fonte Arial para os parágrafos e subtítulos */
+p, h2, h3 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Efeito de sombra ao passar o mouse nos parágrafos e subtítulos */
+p:hover, h2:hover, h3:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
+    transition: text-shadow 0.3s ease-in-out; /* Suaviza a transição da sombra */
+}
+/* Limitar a largura do conteúdo principal a 50% da tela e centralizar */
+main, section {
+    width: 70%; /* O conteúdo ocupará 70% da largura da tela */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Para ajustar o cabeçalho e o rodapé, você também pode limitar a largura */
+header, footer {
+    width: 70%; /* O conteúdo ocupará 70% da largura da tela */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+/* Definir o background gradiente do corpo da página */
+body {
+    background: linear-gradient(to bottom, #3b0000, #000000); /* Gradiente de vermelho vinho escuro para preto */
+    color: white; /* Define a cor do texto para branco para melhor contraste */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fonte padrão para o corpo */
+}
+/* Estilo base da imagem */
+img {
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 15px; /* Deixa as bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a animação ao passar o mouse */
+}
+/* Estilo para o título principal */
+h1 {
+    font-family: 'Bodoni Moda', serif; /* Fonte do título */
+    font-size: 3em; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Suaviza a animação ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o título */
+h1:hover {
+    color: #ff0000; /* Cor vermelha ao passar o mouse */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Brilho vermelho ao passar o mouse */
+}
+/* Estilo base para os textos */
+p, h2, h3 {
+    font-family: 'Arial', sans-serif; /* Fonte para parágrafos e subtítulos */
+    color: #888888; /* Cor cinza padrão para os textos */
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Suaviza a animação ao passar o mouse */
+    border-radius: 5px; /* Arredonda as bordas dos textos */
+    display: inline-block; /* Permite aplicar border-radius e sombra */
+    padding: 5px; /* Adiciona um pequeno preenchimento para mostrar melhor o border-radius */
+}
+
+/* Adiciona sombra ao texto */
+p, h2, h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra leve ao redor do texto */
+}
+
+/* Efeito ao passar o mouse sobre os textos */
+p:hover, h2:hover, h3:hover {
+    transform: scale(1.05); /* Faz o texto saltar levemente para frente */
+    color: #ffffff; /* Muda a cor do texto para branco ao passar o mouse */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Aumenta a sombra ao passar o mouse */
+}
+/* Estilo base para o título principal */
+h1 {
+    font-family: 'Bodoni Moda', serif; /* Fonte do título */
+    font-size: 3em; /* Tamanho da fonte do título */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Suaviza a animação ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o título */
+h1:hover {
+    color: #ff0000; /* Cor vermelha ao passar o mouse */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Brilho vermelho ao passar o mouse */
+}
+
+/* Estilo base para os subtítulos */
+h2, h3 {
+    font-family: 'Bodoni Moda', serif; /* Usa a mesma fonte que o título */
+    font-size: 2em; /* Ajusta o tamanho da fonte dos subtítulos */
+    text-transform: uppercase; /* Deixa os subtítulos em caixa alta */
+    color: #888888; /* Cor cinza padrão para os subtítulos */
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease; /* Suaviza a animação ao passar o mouse */
+    border-radius: 5px; /* Arredonda as bordas dos subtítulos */
+    display: inline-block; /* Permite aplicar border-radius e sombra */
+    padding: 5px; /* Adiciona um pequeno preenchimento para mostrar melhor o border-radius */
+}
+
+/* Adiciona sombra ao subtítulo */
+h2, h3 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra leve ao redor do subtítulo */
+}
+
+/* Efeito ao passar o mouse sobre os subtítulos */
+h2:hover, h3:hover {
+    transform: scale(1.05); /* Faz o subtítulo saltar levemente para frente */
+    color: #ffffff; /* Muda a cor do subtítulo para branco ao passar o mouse */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Aumenta a sombra ao passar o mouse */
+}
+/* Estilo para a imagem */
+img {
+    display: block; /* Garante que a imagem se comporte como um bloco */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a transição dos efeitos */
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+img:hover {
+    transform: translateY(-10px); /* Salta a imagem 10 pixels para cima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra atrás da imagem */
+}
